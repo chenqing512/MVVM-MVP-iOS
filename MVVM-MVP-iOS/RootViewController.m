@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "MainTableViewController.h"
+#import "DoctorViewController.h"
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *mTableView;
@@ -68,7 +69,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-            
+        case 1:
+        {
+            DoctorViewController *vc=[[DoctorViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }

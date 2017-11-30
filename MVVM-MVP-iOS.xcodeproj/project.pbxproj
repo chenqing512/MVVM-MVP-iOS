@@ -19,6 +19,9 @@
 		16BC363A1FCE940B00FEE28E /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC36391FCE940B00FEE28E /* HTTPRequest.m */; };
 		16BC363D1FCE959B00FEE28E /* MainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC363C1FCE959B00FEE28E /* MainTableViewModel.m */; };
 		16BC36401FCE99DA00FEE28E /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC363F1FCE99DA00FEE28E /* BaseViewModel.m */; };
+		16BC36461FCFB2F800FEE28E /* DoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC36451FCFB2F800FEE28E /* DoctorViewController.m */; };
+		16BC36491FCFB31C00FEE28E /* DoctorPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC36481FCFB31C00FEE28E /* DoctorPresenter.m */; };
+		16BC364C1FCFB5C700FEE28E /* DoctorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC364B1FCFB5C700FEE28E /* DoctorModel.m */; };
 		FC76E48DBCB6B1FC8C311A48 /* libPods-MVVM-MVP-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF87F3F98543084B4B4AE51 /* libPods-MVVM-MVP-iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,12 @@
 		16BC363C1FCE959B00FEE28E /* MainTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewModel.m; sourceTree = "<group>"; };
 		16BC363E1FCE99DA00FEE28E /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		16BC363F1FCE99DA00FEE28E /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		16BC36441FCFB2F800FEE28E /* DoctorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoctorViewController.h; sourceTree = "<group>"; };
+		16BC36451FCFB2F800FEE28E /* DoctorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoctorViewController.m; sourceTree = "<group>"; };
+		16BC36471FCFB31C00FEE28E /* DoctorPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoctorPresenter.h; sourceTree = "<group>"; };
+		16BC36481FCFB31C00FEE28E /* DoctorPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoctorPresenter.m; sourceTree = "<group>"; };
+		16BC364A1FCFB5C700FEE28E /* DoctorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoctorModel.h; sourceTree = "<group>"; };
+		16BC364B1FCFB5C700FEE28E /* DoctorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoctorModel.m; sourceTree = "<group>"; };
 		2CF87F3F98543084B4B4AE51 /* libPods-MVVM-MVP-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM-MVP-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1828F623AC8D2A4161C438 /* Pods-MVVM-MVP-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-MVP-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-MVP-iOS/Pods-MVVM-MVP-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A1B78365CB86F2837A57F317 /* Pods-MVVM-MVP-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-MVP-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-MVP-iOS/Pods-MVVM-MVP-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +125,9 @@
 		16BC36251FCE4B7900FEE28E /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				16BC36431FCFB2D900FEE28E /* Public */,
+				16BC36421FCFB2CD00FEE28E /* Presenter */,
+				16BC36411FCFB2C300FEE28E /* Model */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -158,6 +170,33 @@
 				16BC36391FCE940B00FEE28E /* HTTPRequest.m */,
 			);
 			path = HTTP;
+			sourceTree = "<group>";
+		};
+		16BC36411FCFB2C300FEE28E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16BC364A1FCFB5C700FEE28E /* DoctorModel.h */,
+				16BC364B1FCFB5C700FEE28E /* DoctorModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16BC36421FCFB2CD00FEE28E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				16BC36471FCFB31C00FEE28E /* DoctorPresenter.h */,
+				16BC36481FCFB31C00FEE28E /* DoctorPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		16BC36431FCFB2D900FEE28E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				16BC36441FCFB2F800FEE28E /* DoctorViewController.h */,
+				16BC36451FCFB2F800FEE28E /* DoctorViewController.m */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		5263D6DFA38717308AA63742 /* Pods */ = {
@@ -306,8 +345,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16BC36331FCE5C6D00FEE28E /* MainTableViewCell.m in Sources */,
+				16BC36461FCFB2F800FEE28E /* DoctorViewController.m in Sources */,
 				16BC363A1FCE940B00FEE28E /* HTTPRequest.m in Sources */,
 				16BC362D1FCE5C4200FEE28E /* MainTableViewController.m in Sources */,
+				16BC364C1FCFB5C700FEE28E /* DoctorModel.m in Sources */,
+				16BC36491FCFB31C00FEE28E /* DoctorPresenter.m in Sources */,
 				16BC361B1FCE4B1D00FEE28E /* main.m in Sources */,
 				16BC360D1FCE4B1D00FEE28E /* AppDelegate.m in Sources */,
 				16BC36231FCE4B6500FEE28E /* RootViewController.m in Sources */,
