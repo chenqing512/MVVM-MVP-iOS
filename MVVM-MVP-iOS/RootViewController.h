@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  MVVM-MVP-iOS
 //
 //  Created by ChenQing on 2017/11/29.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RootViewController : UIViewController
 
 @end
-
